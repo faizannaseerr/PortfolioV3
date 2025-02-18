@@ -5,6 +5,7 @@ import Creation from '@/components/Creation'
 import { projects } from '@/lib/data'
 import { motion } from "motion/react"
 
+// TODO: Add tags on what the project solves, adheres to, stuff that should stand out etc.
 const Projects = () => {
     // Calculate the midpoint to split projects array
     const midPoint = Math.ceil(projects.length / 2)
