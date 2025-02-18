@@ -22,7 +22,7 @@ const Intro = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="text-xl sm:text-2xl mt-12 font-serif max-w-3xl"
+                    className="text-xl mt-12 font-serif max-w-3xl"
                 >
                     I'm a software engineer and a UofT graduate, specializing in building valuable products that help people.
                 </motion.div>
@@ -30,7 +30,7 @@ const Intro = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className="text-xl sm:text-2xl mt-8 font-serif max-w-3xl"
+                    className="text-xl mt-8 font-serif max-w-3xl"
                 >
                     Here are some of my {" "}
                     <span
