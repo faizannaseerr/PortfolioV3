@@ -13,6 +13,19 @@ const WobblyLine = () => {
         if (path.current) {
             setPath(progress);
         }
+
+        const handleResize = () => {
+            setPath(progress);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            if (reqId) {
+                cancelAnimationFrame(reqId);
+            }
+        };
     }, [])
 
     const setPath = (progress: number) => {

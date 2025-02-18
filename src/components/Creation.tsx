@@ -28,7 +28,7 @@ const Creation = ({ project }: CreationProps) => {
 
                 <motion.div
                     onClick={handleClick}
-                    className='px-2 py-1 rounded-md hover:bg-gray-200
+                    className='px-2 py-1 rounded-md hover:bg-[#e5e5e5]
                     cursor-pointer transition-colors duration-200 border-[1px] border-gray-800 w-8 text-center'
                     animate={{ opacity: [1, 0, 1] }}
                     transition={{ duration: 0.2 }}
