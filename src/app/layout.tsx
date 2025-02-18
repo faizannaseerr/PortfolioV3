@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="h-screen w-screen py-12 px-20 bg-[#F8F8F8]"
+        className="h-screen py-12 px-20 bg-[#F8F8F8]"
       >
         <Loading />
         <Delay children={children} />

@@ -20,7 +20,7 @@ const Creation = ({ project }: CreationProps) => {
 
     return (
         <div className='flex flex-col gap-5 items-start font-serif p-4 border-2 
-        border-gray-800 rounded-sm max-w-xs min-w-xs bg-gray-100'>
+        border-gray-800 rounded-sm w-full bg-gray-100'>
             <div className='flex text-md items-center justify-between font-semibold min-w-full'>
                 {project.title}
                 <motion.div
