@@ -2,6 +2,8 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'motion/react'
 
+// TODO: Add touch support for line animation
+
 const WobblyLine = () => {
     const path = useRef<SVGPathElement>(null);
     let progress: number = 0;
