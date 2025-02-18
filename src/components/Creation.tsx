@@ -19,14 +19,17 @@ const Creation = ({ project }: CreationProps) => {
     }
 
     return (
-        <div className='flex flex-col gap-5 items-start font-serif p-4 border-2 
+        <div className='flex flex-col gap-5 items-start font-serif p-4 border-[1px] 
         border-gray-800 rounded-sm w-full bg-gray-100'>
-            <div className='flex text-md items-center justify-between font-semibold min-w-full'>
-                {project.title}
+            <div className='flex text-sm sm:text-md items-center justify-between font-semibold min-w-full'>
+                <div className='flex-1 break-words max-w-[75%]'>
+                    {project.title}
+                </div>
+
                 <motion.div
                     onClick={handleClick}
                     className='px-2 py-1 rounded-md hover:bg-gray-200 
-                    cursor-pointer transition-colors duration-200 border-2 border-gray-800 w-8 text-center'
+                    cursor-pointer transition-colors duration-200 border-[1px] border-gray-800 w-8 text-center'
                     animate={{ opacity: [1, 0, 1] }}
                     transition={{ duration: 0.2 }}
                 >
@@ -40,7 +43,7 @@ const Creation = ({ project }: CreationProps) => {
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
-                        className='text-sm overflow-hidden flex flex-col gap-4'
+                        className='text-xs sm:text-sm overflow-hidden flex flex-col gap-4'
                     >
                         <div>
                             {project.description}
@@ -52,14 +55,14 @@ const Creation = ({ project }: CreationProps) => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3 }}
-                                    className='px-1.5 py-0.5 bg-gray-200 rounded-md text-[10px] font-mono'
+                                    className='px-1.5 py-0.5 bg-gray-200 rounded-md text-[8px] sm:text-[10px] font-mono'
                                 >
                                     {tool}
                                 </motion.span>
                             ))}
                         </div>
                         <motion.div
-                            className='flex gap-4 self-end'
+                            className='flex gap-1 items-center justify-end'
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.2 }}

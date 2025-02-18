@@ -10,7 +10,7 @@ import { motion } from "motion/react"
 const Links = () => {
     return (
         <motion.div
-            className='flex items-center justify-start mt-4'
+            className='flex items-center sm:justify-start justify-center mt-4'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.9 }} // Starts after Projects animation
