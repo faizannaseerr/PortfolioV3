@@ -15,6 +15,13 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: "Inspply",
+        description: "A job application assistant that provides users with resume-tailored, company-centric road maps from application to job offer, as well as aims to automate the monotonous application process with AI agents.",
+        tools: ["Next", "Supabase", "Clerk", "Tailwind", "Exa", "LangChain", "Browser Use"],
+        githubUrl: "https://github.com/faizannaseerr/InspplyV2"
+    },
+
+    {
         title: "Content Management System",
         description: "Developed a content management system that utilizes authorization and allows users to create, edit and delete content.",
         tools: ["React", "Tailwind", "JWT", "Node", "Express", "MongoDB", "AWS EC2"],
@@ -28,12 +35,10 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/faizannaseerr/TimelineGenerator"
     },
     {
-        title: "Audio Intellect",
-        description: "An artificially intelligent web app that allows users to record or upload recordings of meetings & lectures, and then receive summaries based on the recordings and user requirements.",
-        tools: ["Whisper-API", "GPT4", "React", "Tailwind", "HTML", "Express", "Node", "MongoDB"],
-        liveUrl: "https://au-in.vercel.app",
-        githubUrl: "https://github.com/faizannaseerr/AudioIntellect"
-        // could add YouTube here too/loom
+        title: "Animal Classifier",
+        description: "A program that implements a neural network to recognize images of cats and dogs and classify them.",
+        tools: ["Python", "Numpy", "Scikit-Learn"],
+        githubUrl: "https://github.com/faizannaseerr/AnimalClassifer/"
     },
     {
         title: "Android Assist",
@@ -42,16 +47,12 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/faizannaseerr/AndroidAssist"
     },
     {
-        title: "Animal Classifier",
-        description: "A program that implements a neural network to recognize images of cats and dogs and classify them.",
-        tools: ["Python", "Numpy", "Scikit-Learn"],
-        githubUrl: "https://github.com/faizannaseerr/AnimalClassifer/"
-    },
-    {
-        title: "Driver Statistics",
-        description: "Web scraping program that displays F1 statistics from the internet on the current season based on user input, e.g. standings, DNFs, wins, etc.",
-        tools: ["Python", "BeautifulSoup", "Requests"],
-        githubUrl: "https://github.com/faizannaseerr/DriverStatistics"
+        title: "Audio Intellect",
+        description: "An artificially intelligent web app that allows users to record or upload recordings of meetings & lectures, and then receive summaries based on the recordings and user requirements.",
+        tools: ["Whisper-API", "GPT4", "React", "Tailwind", "HTML", "Express", "Node", "MongoDB", "AWS S3"],
+        liveUrl: "https://au-in.vercel.app",
+        githubUrl: "https://github.com/faizannaseerr/AudioIntellect"
+        // could add YouTube here too/loom
     },
     {
         title: "Pixel Peril",
@@ -59,5 +60,11 @@ export const projects: Project[] = [
         tools: ["MIPS Assembly", "MARS Bitmap Display"],
         githubUrl: "https://github.com/faizannaseerr/ProjectB58"
         // could add YouTube here too/loom
-    }
+    },
+    {
+        title: "Driver Statistics",
+        description: "Web scraping program that displays F1 statistics from the internet on the current season based on user input, e.g. standings, DNFs, wins, etc.",
+        tools: ["Python", "BeautifulSoup", "Requests"],
+        githubUrl: "https://github.com/faizannaseerr/DriverStatistics"
+    },
 ]; 
