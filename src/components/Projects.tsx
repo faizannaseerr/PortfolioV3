@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 import Creation from '@/components/Creation'
 import { projects } from '@/lib/data'
+import { motion } from "motion/react"
 
 const Projects = () => {
     // Calculate the midpoint to split projects array
@@ -9,7 +12,12 @@ const Projects = () => {
     const secondHalf = projects.slice(midPoint)
 
     return (
-        <div className='flex flex-row gap-4 mt-4 min-w-2xl max-w-2xl'>
+        <motion.div
+            className='flex flex-row gap-4 mt-4 min-w-2xl max-w-2xl'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+        >
             <div className='flex gap-4 flex-col w-full'>
                 {firstHalf.map((project) => (
                     <Creation key={project.title} project={project} />
@@ -20,7 +28,7 @@ const Projects = () => {
                     <Creation key={project.title} project={project} />
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
