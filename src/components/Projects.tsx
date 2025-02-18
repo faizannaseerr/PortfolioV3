@@ -13,7 +13,7 @@ const Projects = () => {
 
     return (
         <motion.div
-            className='flex flex-col md:flex-row gap-4 mt-4 min-w-2xl max-w-2xl'
+            className='flex flex-col md:flex-row gap-4 mt-4 min-w-3xl max-w-3xl'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}

@@ -13,7 +13,7 @@ const Links = () => {
             className='flex items-center sm:justify-start justify-center mt-4'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.9 }} // Starts after Projects animation
+            transition={{ duration: 0.5, delay: 1.1 }} // Starts after Projects animation
         >
             <div className='flex items-center'>
                 <a href="/CV.pdf" target='_blank'><AttachFileIcon /></a>

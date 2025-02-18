@@ -20,7 +20,7 @@ const Creation = ({ project }: CreationProps) => {
 
     return (
         <div className='flex flex-col gap-5 items-start font-serif p-4 border-[1px] 
-        border-gray-800 rounded-sm w-full bg-gray-100'>
+        border-gray-800 rounded-sm w-full bg-gray-100 z-[2]'>
             <div className='flex text-sm sm:text-md items-center justify-between font-semibold min-w-full'>
                 <div className='flex-1 break-words max-w-[75%]'>
                     {project.title}
