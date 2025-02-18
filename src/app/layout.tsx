@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Loading from "@/components/Loading";
 import Delay from "@/components/Delay";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Faizan Naseer",
@@ -20,6 +21,7 @@ export default function RootLayout({
       >
         <Loading />
         <Delay children={children} />
+        <Analytics />
         {/* {children} */}
       </body>
     </html>
