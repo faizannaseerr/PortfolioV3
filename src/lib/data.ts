@@ -15,22 +15,25 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: "Content Management System",
+        description: "Developed a content management system that utilizes authorization and allows users to create, edit and delete content.",
+        tools: ["React", "Tailwind", "JWT", "Node", "Express", "MongoDB", "AWS EC2"],
+        liveUrl: "https://cmsfend.vercel.app/",
+        githubUrl: "https://github.com/faizannaseerr/CMS"
+    },
+    {
         title: "Degree Design",
         description: "An app that allows students to generate a degree timetable based on prerequisites of their desirable courses, as well as allows admins to edit, delete, and add courses.",
         tools: ["Android Studio", "Java", "Git", "Firebase", "Jira"],
         githubUrl: "https://github.com/faizannaseerr/TimelineGenerator"
     },
     {
-        title: "Content Creation App",
-        description: "Developed a content management system that utilizes authorization and allows users to create, edit and delete content.",
-        tools: ["React", "Tailwind", "JWT", "Node", "Express", "MongoDB", "AWS EC2"],
-        liveUrl: "https://cmsfend.vercel.app/"
-    },
-    {
         title: "Audio Intellect",
         description: "An artificially intelligent web app that allows users to record or upload recordings of meetings & lectures, and then receive summaries based on the recordings and user requirements.",
         tools: ["Whisper-API", "GPT4", "React", "Tailwind", "HTML", "Express", "Node", "MongoDB"],
-        liveUrl: "https://au-in.vercel.app"
+        liveUrl: "https://au-in.vercel.app",
+        githubUrl: "https://github.com/faizannaseerr/AudioIntellect"
+        // could add YouTube here too/loom
     },
     {
         title: "Android Assist",
@@ -55,5 +58,6 @@ export const projects: Project[] = [
         description: "Developed a dynamic 2D game using MIPS assembly language, through pixel mapping and connecting to a MARS bitmap display.",
         tools: ["MIPS Assembly", "MARS Bitmap Display"],
         githubUrl: "https://github.com/faizannaseerr/ProjectB58"
+        // could add YouTube here too/loom
     }
 ]; 
