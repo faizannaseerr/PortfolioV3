@@ -43,30 +43,12 @@ const WobblyLine = () => {
         }
     }
 
-    const manageMouseMove = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
+    const manageMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         if (!path.current) return;
-
-        let clientX: number;
-        let movementY: number;
-
-        if ('touches' in e) {
-            // Touch event
-            const touch = e.touches[0];
-            clientX = touch.clientX;
-
-            // Calculate movement for touch events using stored previous position
-            const prevTouch = (e as any).prevTouch || touch;
-            movementY = touch.clientY - prevTouch.clientY;
-            (e as any).prevTouch = touch;
-        } else {
-            // Mouse event
-            clientX = e.clientX;
-            movementY = (e as React.MouseEvent).movementY;
-        }
-
+        const { movementY, clientX } = e;
         const pathBound = path.current.getBoundingClientRect();
         x = (clientX - pathBound.left) / pathBound.width;
-        progress += movementY;
+        progress += movementY
         setPath(progress);
     }
 
@@ -101,9 +83,6 @@ const WobblyLine = () => {
             <div onMouseEnter={() => { manageMouseEnter() }}
                 onMouseMove={(e) => { manageMouseMove(e) }}
                 onMouseLeave={() => { manageMouseLeave() }}
-                onTouchStart={() => { manageMouseEnter() }}
-                onTouchMove={(e) => { manageMouseMove(e) }}
-                onTouchEnd={() => { manageMouseLeave() }}
                 className='relative h-[40px] w-full top-[-20px]
                  hover:h-[500px] hover:top-[-250px] z-[1]'></div>
             <svg className='w-full h-[500px] absolute top-[-250px]'>
