@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  --line-color: #b81d2d;
+::-moz-selection { /* Code for Firefox */
+  background: #b81d2d;
+}
+
+::selection {
+  background: #b81d2d;
 }
 
 body {
