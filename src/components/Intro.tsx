@@ -15,7 +15,7 @@ const Intro = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-4xl sm:text-6xl font-serif"
                 >
-                    My name is Faizan.
+                    Hey, my name is Faizan.
                 </motion.div>
                 {/* <div className="bg-gray-900 h-[0.5px] mt-8"></div> */}
                 <motion.div
