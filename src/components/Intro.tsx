@@ -24,7 +24,7 @@ const Intro = () => {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="text-xl mt-12 font-serif max-w-3xl"
                 >
-                    I'm a software engineer and a UofT graduate, specializing in building valuable products that help people.
+                    I'm a software engineer and a senior UofT student, specializing in building valuable products that help people.
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
