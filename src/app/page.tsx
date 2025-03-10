@@ -12,7 +12,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.05 }}
-      className="py-12 px-12 border-gray-800 rounded-sm border-[1.5px] shadow-lg bg-[#F4F4F4]"
+      className="sm:py-12 sm:px-12 sm:border-gray-800 sm:rounded-sm sm:border-[1.5px] sm:shadow-lg sm:bg-[#F4F4F4] border-none p-0"
     >
       <div className="flex flex-col gap-4">
         <Intro />
